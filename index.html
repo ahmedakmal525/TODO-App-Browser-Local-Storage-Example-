@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Basic TODO App</title>
+  </head>
+  <body>
+      <div class="col">
+            <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Enter Name">
+                            <small id="nameHelp" class="form-text text-muted">Provide your name please!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTitle">Title</label>
+                            <input type="text" class="form-control" id="inputTitle" aria-describedby="titleHelp" placeholder="Enter Title">
+                            <small id="titleHelp" class="form-text text-muted">Give a title you wanted to remember!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputDate">Date</label>
+                            <input type="date" class="form-control" id="exampleInputDate" aria-describedby="dateHelp" placeholder="Enter Date">
+                            <small id="dateHelp" class="form-text text-muted">Enter the date you want to remember!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputContent">TODO</label>
+                            <textarea name="" class="form-control" id="exampleInputContent" placeholder="TODO" id="" cols="30" rows="05"></textarea>
+                        </div>
+                        <button type="submit" id="saveButton" class="btn btn-primary">Save TODO</button>
+                    </div>
+                  <div class="col-md-8">
+                  </br>
+                      <div class="form-group">
+                            <input type="text" class="form-control" id="usernameInput" style="width: 18.8rem;" placeholder="Enter the name to retrieve TODO lists">
+                      </div>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Content</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-body-class">
+                        </tbody>
+                      </table>
+                  </div>
+              </div>
+      </div>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Edit Note</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="editTitle">Title</label>
+                        <input type="text" class="form-control" id="editTitle" aria-describedby="titleHelp" placeholder="Enter Title">
+                        <small id="titleHelp" class="form-text text-muted">Give a title you wanted to remember!</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="editDate">Date</label>
+                        <input type="date" class="form-control" id="editDate" aria-describedby="dateHelp" placeholder="Enter Date">
+                        <small id="dateHelp" class="form-text text-muted">Enter the date you want to remember!</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="editContent">TODO</label>
+                        <textarea name="" class="form-control" id="editContent" placeholder="TODO" id="" cols="30" rows="05"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary save-button">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
